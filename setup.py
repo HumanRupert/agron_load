@@ -5,7 +5,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="agron_load",
-    version="0.0.1",
+    version="1.0.0clea",
     author="Ali Akhtari",
     author_email="hi@aliakh.me",
     description="Loader module for Agron data collection microservices",
@@ -21,7 +21,7 @@ setuptools.setup(
     install_requires=[
         'python-dotenv',
         'requests',
-        'warrant'
+        'boto3'
     ],
     python_requires='>=3.8',
 )
