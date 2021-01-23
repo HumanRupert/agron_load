@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: agron-load
-Version: 1.0.0
+Version: 1.0.1
 Summary: Loader module for Agron data collection microservices
 Home-page: https://github.com/akhtariali/agron_load
 Author: Ali Akhtari
