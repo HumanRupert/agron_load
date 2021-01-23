@@ -7,6 +7,7 @@ import base64
 import json
 
 import boto3
+from botocore.config import Config
 import requests
 from dotenv import load_dotenv
 
@@ -47,7 +48,10 @@ def login():
     CLIENT_SECRET = os.environ["CLIENT_SECRET"]
     COGNITO_PASSWORD = os.environ["COGNITO_PASSWORD"]
     COGNITO_USERNAME = os.environ["COGNITO_USERNAME"]
-    client = boto3.client('cognito-idp')
+    AWS_REGION = os.environ["AWS_REGION"]
+
+    config = Config(region_name=AWS_REGION)
+    client = boto3.client('cognito-idp', config=config)
 
     auth = initiate_auth(client, COGNITO_USERNAME,
                          COGNITO_PASSWORD, USER_POOL_ID, CLIENT_ID, CLIENT_SECRET)
