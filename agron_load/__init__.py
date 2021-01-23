@@ -49,7 +49,7 @@ def login():
     COGNITO_USERNAME = os.environ["COGNITO_USERNAME"]
     AWS_REGION = os.environ["AWS_REGION"]
     ACCESS_KEY = os.environ["AWS_ACCESS_KEY"]
-    SECRET_KEY = os.environ["AWS_SECRET_ACCESS_KEY"]
+    SECRET_KEY = os.environ["AWS_SECRET_KEY"]
 
     client = boto3.client('cognito-idp', region_name=AWS_REGION,
                           aws_access_key_id=ACCESS_KEY,

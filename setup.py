@@ -5,7 +5,7 @@ with open("readme.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="agron_load",
-    version="1.0.1",
+    version="1.0.3",
     author="Ali Akhtari",
     author_email="hi@aliakh.me",
     description="Loader module for Agron data collection microservices",
